@@ -1,0 +1,164 @@
+if (typeof _cls_config === "undefined") _cls_config = {};
+
+// Enable 100% reporting and 10% recording as per Salesforce contract
+_cls_config.enabledByChance = 1;
+_cls_config.domRecordEnabled = true;
+_cls_config.domRecordEnabledByChance = 0.1;
+
+/* BEGIN ajax */
+_cls_config.ajaxRecordMetadata = "never";
+_cls_config.ajaxRecordRequestBody = "never";
+_cls_config.ajaxRecordRequestHeaders = "and(tld,statusgte(300))";
+_cls_config.ajaxRecordResponseBody = "never";
+_cls_config.ajaxRecordResponseHeaders = "and(tld,statusgte(300))";
+_cls_config.interceptAjax = true;
+_cls_config.ajaxRecordStats = "and(tld,statusgte(300))";
+
+/*BEGIN MASKING*/
+_cls_config.valueMaskingMode = "blacklist";
+_cls_config.maskWhitelistValueById = [];
+_cls_config.maskBlacklistValueById = [
+    "header-text-search-bar",
+    "voucherCode",
+    "coupon_code",
+    "firstName",
+    "lastName",
+    "email",
+    "emailConfirm",
+    "password",
+    "newPassword",
+    "confirmPassword",
+    "lookupHouseNo",
+    "lookupPostcode",
+    "zipCode",
+    "mobilePhone",
+    "phone",
+    "input-with-dropdown-input",
+    "input-with-dropdown-dropdown-list",
+    "address1",
+    "address2",
+    "address3",
+    "postcode",
+    "city",
+    "basketpostcode"
+];
+_cls_config.maskWhitelistValueByClass = [];
+_cls_config.maskBlacklistValueByClass = ["sessioncamexclude", "email", "password"];
+_cls_config.valueWhitelistMaskSimpleSelector = [];
+_cls_config.valueBlacklistMaskSimpleSelector = [
+    "[data-test=fulfilment-search-stock-search-input]",
+    "[data-test=store-selector-search-bar]"
+];
+_cls_config.domMaskingMode = "blacklist";
+_cls_config.domWhitelistMaskContentById = [];
+_cls_config.domBlacklistMaskContentById = ["input-with-dropdown-dropdown-list"];
+_cls_config.domWhitelistMaskContentByClass = [];
+_cls_config.domBlacklistMaskContentByClass = ["sessioncamhidetext", "sessioncamexclude", "AddressLinesstyles__AddressLines-sc-1wsq5ki-0", "previousPostcode", "HeaderSummarystyles__FulfilmentAreaHeading-sc-20r47y-2"];
+_cls_config.domWhitelistMaskSimpleSelector = [];
+_cls_config.domBlacklistMaskSimpleSelector = [
+    "#homedeliveryitemspanel > div.panelBody > ul > li.rightPanel > div > ul > li.marginLeftOne.paragraphText",
+    ".HeaderSummarystyles__FulfilmentAreaHeading-sc-1dh0r03-2.fauhJf",
+    "body > main > div > div > section > div > div > div.panel-group.panel-checkout.gutter-xs > section.panel.panel-complete > div > p",
+    "body > main > div > div > section > div > div > div.panel-group.panel-checkout.gutter-xs > section.panel.panel-active > div > div > form > div:nth-child(4) > div:nth-child(1) > p",
+    ".body > main > div > div > section > div > div > div.panel-group.panel-checkout.gutter-xs > section:nth-child(2) > div > p",
+    ".HeaderSummarystyles__FulfilmentAreaHeading-sc-1dh0r03-2.cPeCxK",
+    ".AddressLinesstyles__AddressLines-db86ef-0",
+    "[data-test = address-list-form]",
+    "[data-test= ocp-customer-section]",
+    ".Headingstyles__Intro-sc-1vcwzh9-3 > dl",
+    ".Headingstyles__Intro-sc-1vcwzh9-3 > div > dl > div:nth-child(1) > dd",
+    ".size3of5",
+    ".paddingTopOne",
+    ".addressContent",
+    "#changeaddresspanel",
+    "#savedcardslist",
+    ".orderContent > .deliveryItem > div > span.fontbold.headingTextRed",
+    "#homedeliveryitemspanel > div.panelBody > ul > li.rightPanel > div > ul > li",
+    ".ShipmentDetailsstyles__CollectionNumberCodeContainer-sc-1ey8wwx-1",
+    ".width37",
+    ".address-summary",
+    "#billing-address-select_radios",
+    ".space-mt15",
+    ".vcard",
+    ".order-summary__address",
+    "[data-test=ao-localised]",
+    "[data-test=billing-person-details]",
+    "[data-test=billing-address1]",
+    "[data-test=billing-address2]",
+    "[data-test=billing-address3]",
+    "[data-test=billing-address-city]",
+    "[data-test=billing-address-county]",
+    "[data-test=billing-address-postcode]",
+    "[data-test=billing-address-phone-number]",
+    "[data-test=billing-phone-number]",
+    "[data-test=basket-fulfilmentform-edit]",
+    "[data-test=ocp-collection-pin-content]",
+    "[data-test=delivery-info]",
+    "[data-test=delivery-label]",
+    ".AvailabilityMessagestyles__Container-sc-1rhbnl2-0.hJhuin > span > strong"
+];
+
+_cls_config.resourcesRecordEnabled = true;
+_cls_config.resourcesRecordCount = 1;
+_cls_config.resourcesRecordChance = 0.2;
+_cls_config.resourcesRecordAllowCors = true;
+_cls_config.iframesAutoInject = false;
+_cls_config.recordMouseMoves = true;
+_cls_config.recordScrolls = true;
+_cls_config.recordHovers = true;
+_cls_config.clientAttributesEnabled = true;
+_cls_config.clientAttributeMaxLength = 300;
+_cls_config.collectStruggles = true;
+_cls_config.recordShadowDom = true;
+
+//120686
+_cls_config.removeBase64Fonts = true;
+
+//168610
+_cls_config.saveChancesByCookie = true;
+
+_cls_config.resourceTimingRecordEnabled = true;
+_cls_config.resourceTimingRecordEnabledByChance = 0.005;
+_cls_config.webVitalsRecordEnabled = true;
+_cls_config.recordScrollReach = true;
+_cls_config.recordConsoleWarn = true;
+_cls_config.recordConsoleInfo = true;
+_cls_config.domFormAnalysisReporting = true;
+_cls_config.domFormValidationTracking = true;
+_cls_config.recordErrors = false;
+
+_cls_config.devToolsDetectionEnabled = false;
+
+_cls_config.captureGlobalObjects = [
+    "CJOS.device.environmentPerformance.cpuStrengthScore",
+    "CJOS.device.environmentPerformance.networkStrengthScore",
+    "CJOS.device.general.darkMode",
+    "CJOS.journey.flow.numOfOpenTabsValue",
+    "CJOS.visitor.segments.isIncognitoSession",
+    "CJOS.visitor.segments.isTechSavvy",
+    "CJOS.visitor.weather.condition",
+    "CJOS.visitor.weather.tempCRange",
+    "digitalData.cart.id",
+    "digitalData.cart.item.length",
+    "digitalData.cart.price.total",
+    "digitalData.currentTrackValue",
+    "digitalData.page.category.currentCategoryId",
+    "digitalData.page.category.pageType",
+    "digitalData.page.category.plpLayout",
+    "digitalData.page.category.subCategory1",
+    "digitalData.page.category.subCategory2",
+    "digitalData.page.category.subCategory3",
+    "digitalData.page.category.subCategory4",
+    "digitalData.page.pageInfo.pageName",
+    "digitalData.page.pageInfo.pageType",
+    "digitalData.page.pageInfo.siteSection",
+    "digitalData.user[0].profile[0].attributes.loginStatus",
+    "digitalData.user[0].profile[0].profileInfo.profileID"
+];
+
+_cls_config.suppressEventsAfterSnapshotTimeout = ['resize', 'thirdPartyAttribute', 'thirdpartymap', 'abTesting', 'thirdparty', 'clientAttribute', 'document'];
+
+/* BEGIN V7 detector requirements */
+_cls_config.initDetectorOnInteractive = true;
+_cls_config.detectorPath = 'https://cdn.gbqofs.com/sv/c/';
+/* End V7 detector requrements */

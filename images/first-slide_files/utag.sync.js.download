@@ -1,0 +1,12 @@
+//tealium universal tag - utag.sync ut4.0.202311290920, Copyright 2023 Tealium.com Inc. All Rights Reserved.
+window.utag_data=window.utag_data||{}
+window.digitalData=window.digitalData||{}
+window.digitalData.parallelRun=true
+window.earlyEventStack=window.earlyEventStack||[]
+window.digitalData.trackVersion='utag.sync.js'
+window.digitalData.track=function(n,details){window.earlyEventStack.push({eventName:n,details:details})}
+if(typeof window.s==='object'&&window.s.t&&window.s.tl){}else{window.s={}
+window.s.version='dummy'
+window.s.t=function(){}
+window.s.tl=function(a,b,c,d,e){}
+window.s_gi=function(a){return window.s}}

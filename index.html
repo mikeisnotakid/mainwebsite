@@ -42,13 +42,15 @@ nav bar -->
                     </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" text-light href="contact.html">Contact Us</a>
+                        <i class="bi bi-person-lines-fill fs-3 p-2" data-bs-toggle="modal"
+                            data-bs-target="#modal-dialog-scrollable"></i>
                     </li>
 
-                    <li class="nav-item text-light">
-                        <a href="#newinstores">
+
+                    <!-- <li class="nav-item text-light">
+                        <a href="shopingstore.html">
                             <i class="bi bi-cart basket shoppingcart"></i>
-                        </a>
+                        </a> -->
 
                 </ul>
                 <form class="d-flex" role="search">
@@ -58,6 +60,37 @@ nav bar -->
             </div>
         </div>
     </nav>
+
+
+
+    <!-- modal -->
+
+    <div class="modal fade my-5" id="modal-dialog-scrollable" tabindex="-1" aria-labelledby="modal-dialog-scrollable"
+        aria-hidden="true">
+        <div class="container ">
+            <div class="modal-content bg-dark">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    ...
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
 
     <!-- first container -->
 
@@ -209,11 +242,81 @@ nav bar -->
         </div>
     </div>
 
+    <div class="container">
+        <h2 class="text-center mb-4">Why buy at Maynooth?</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h6>Cosy at home</h6>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>There are all sorts of ways to make your home a cosier place to be. Choose a plush corner
+                            sofa
+                            for an ideal place to relax after a long day. If you want to add some colour to your room,
+                            pile
+                            up on cushions or add a soft and fluffy rug and you can turn your home into a cocoon. You
+                            can
+                            also add an interesting focal point with a unique piece such as an accent chair in a
+                            vintage-inspired design. Once the temperature really starts to drop, one of our electric
+                            blankets can help you stay toasty at night.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+
+                        <h6>Furniture shop</h6>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>You’ll find stylish furniture for every room of your home at Habitat. From mid-century
+                            inspired
+                            to Scandi minimalism, there’s bound to be a look you love. Whether it’s a sleek sideboard
+                            for
+                            your living room or a dining room set for entertaining, there are lots of different styles
+                            to
+                            choose from. Not sure what’ll suit your space? Take a look at our inspiration section for
+                            ideas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h6> Impress your guests</h6>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">We make it easy to get ready for guest visits. If you’re looking to turn
+                        that spare room into a comfy space, we have a wide selection of beds to fit different spaces.
+                        Our
+                        range of guest beds includes trundle and stacking beds which can save you space. Make sure you
+                        have
+                        enough bedding for overnight guests and consider adding some storage so you can put things away
+                        neatly. Upgrade your dining table to create more space for visitors. You can even choose a space
+                        saving table if you’re short on space.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- newsletter -->
     <div class="container my-5 text-center ">
-        <h5>GET 10% OFF when you sign up to our newsletter**</h5>
+        <h5><i class="bi bi-envelope fs-2 p-2"></i>GET 10% OFF when you sign up to our newsletter**</h5>
         <p>Plus stay up to date with new arrivals, offers, events and lots more!</p>
         <div class="d-grid gap-3  col-sm-4 col-md-4 mx-auto ">
             <form action="">

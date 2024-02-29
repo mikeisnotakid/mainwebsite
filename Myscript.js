@@ -13,7 +13,7 @@ function NewsletterBtnReact(event) {
         DisplayReaction.style.color = "red"
         DisplayReaction.style.backgroundColor = "white"
         DisplayReaction.style.height = "50px"
-        
+
 
 
     }
@@ -23,6 +23,8 @@ function NewsletterBtnReact(event) {
 
         DisplayReaction.innerHTML = "Succesfully Sent"
         DisplayReaction.style.color = "blue"
+        DisplayReaction.style.backgroundColor = "white"
+        DisplayReaction.style.height = "50px"
         NewsletterBtn.type = "submit";
 
 
